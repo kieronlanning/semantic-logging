@@ -153,6 +153,15 @@ namespace Microsoft.Practices.EnterpriseLibrary.SemanticLogging.Sinks.WindowsAzu
         {
             get { return this.eventEntry.ThreadId; }
         }
+        
+        /// <summary>
+        /// Gets the task name.
+        /// </summary>
+        /// <value>The task name.</value>
+        public string TaskName
+        {
+            get { return this.eventEntry.Schema.TaskName; }
+        }
 
         /// <summary>
         /// Gets or sets the activity id for the event.

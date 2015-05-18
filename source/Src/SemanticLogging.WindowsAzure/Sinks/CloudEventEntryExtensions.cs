@@ -32,6 +32,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.SemanticLogging.Sinks.WindowsAzu
 
             dictionary.Add("Opcode", new EntityProperty(entry.Opcode));
             dictionary.Add("Task", new EntityProperty(entry.Task));
+            dictionary.Add("EventName", new EntityProperty(entry.TaskName));
             dictionary.Add("Version", new EntityProperty(entry.Version));
 
             dictionary.Add("ProcessId", new EntityProperty(entry.ProcessId));

@@ -19,6 +19,12 @@
       <!--[Add any built-in or custom formatter here if the sink supports text formatters]-->
       <eventTextFormatter header="----------"/>
     </flatFileSink>
+
+    <windowsAzureTableSink name="tableSink" connectionString="UseDevelopmentStorage=true" instanceName="slabTest">
+      <sources>
+        <eventSource name="Three-CallTracking" level="LogAlways" />
+      </sources>
+    </windowsAzureTableSink>
     
     <!--[Add any built-in or custom sink definition here]-->
   
